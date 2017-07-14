@@ -1,10 +1,11 @@
 <?php
 
-class Task {
+class Task implements TaskInterface { // turi atitikti nurodyta interface pvz_uzduotys.php
 
 	public $title;
 	private $isCompleted;
 	public $description;
+	public $deadline;
 
 	public function __construct($title, $desc) {
 		$this->title = $title;
@@ -23,6 +24,6 @@ class Task {
 
 	public function getProducts() {
 		show("Im going to the shop to get some products");
-		
+
 	}
 }

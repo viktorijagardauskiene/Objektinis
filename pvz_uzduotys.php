@@ -12,6 +12,7 @@ showa($new_task); // funkcija kuri nurodyta messages.php faile
 $another_task = new Cooking("Make something to eat", "anything really"); // title, descrip
 showa($another_task);
 
-$new_task->getProducts(); // sitam galioja klase task
-$another_task->getProducts(); // o sitam priklauso klase task papildyta klase cooking
-
+interface TaskInterface {
+	public function getDaysToDeadline(); // neaprasom funkcijos, tik nurodom kad sitas metodas mum bus reikalingas
+	public function getAge();
+}
