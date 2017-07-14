@@ -7,22 +7,57 @@ class Animal {
 	public $food;
 
 
+
+
+	public function __construct($name) {
+		$this->name = $name;
+	}
+
+	public function run() {
+		echo $this->name .' is running';
+	}
+
+	public function talk() {
+		
+	}
+
+	public function eat() {
+		
+	}
+
+	public function sleep() {
+		
+	}
 }
 
-public function run() {
+class Dog extends Animal { // subklase
+	public function run() {
+			echo $this->name .' is flying';
+		}
+
+	public function size() {
+		
+	}
 
 }
 
-public function talk() {
-	
+class Fish extends Animal { // subklase
+	public function run() {
+			echo $this->name .' is swiming';
+		}
+
+	public function swimSpeed() {
+
+	}
+
 }
 
-public function eat() {
-	
+class Bird extends Animal { // subklase
+	public function hasWings() {
+
+	}
+
 }
 
-public function sleep() {
-	
-}
-
-echo '$name is'.run();
+$gyvunas = new Animal('Suo');
+$gyvunas->run();
