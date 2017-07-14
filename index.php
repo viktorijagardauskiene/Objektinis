@@ -4,11 +4,19 @@
 // klase nurodo bendrus parametrus visiems objektams
 class Car {
 	public $make; // nurodom kintamuosius, reiksmiu suteikti nereikia, public - kad butu pasiekiami is visur
-	public $model;
+	private $model;
 	public $owner;
 
 	public function __construct($owner) { // funkcija veikianti sukuriant objekta, pradzioje yra du apatiniai bruksniai, visada ivykdomas kai pagaminam nauja objekta
 		$this->owner = $owner;
+	}
+
+	public function set_model($model) { // kadangi model kintamajam nustatyta private
+		$this->model = $model;
+	}
+
+	public function get_model() {
+		return $this->model;
 	}
 
 	public function drive($speed) { // nurodom objekto funkcija, kitaip vadinama metodu
@@ -21,7 +29,8 @@ class Car {
 
 $auto = new Car("Viktorija"); // sukuriamas naujas objektas, skliausteliuose priskirtas owner reiksme
 $auto->make = "Toyota"; // -> priskiriama objektui reiksme  
-$auto->model = "Avensis";
+$auto->set_model("Avensis");
+echo $auto->get_model()."<br />"; // funkcija atvaizduoja private objekta
 $auto->drive(80); // priskiriama objektui funkcija (metodas), skliausteliuose nurodyta $speed reiksme
 $auto->stop();
 
