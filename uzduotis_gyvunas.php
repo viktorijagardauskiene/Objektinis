@@ -92,3 +92,15 @@ showa($animals);
 show(Animal::$countOfAnimals); // iskvieciam static atributa
 
 Animal::sayHi(); // iskvieciam static funkcija
+
+/* namu darbai: class Car su
+Tributai: make, model, dateOfManufacture, +3 papildomi 
+Metodai: bent 4. 
+Subklases: 
+	sportsCar(issibegejimo laikas iki 100) 
+	cisterna - tanker (talpa), 
+	electricCar(pakrovimo laikas, vaziavimo atstumas);
+
+sukurti po 3 objektus kiekvienai subkategorijai, susideti i masyva ir atvaizduoti ekrane
+
+bendri: owner milage motor insurance
