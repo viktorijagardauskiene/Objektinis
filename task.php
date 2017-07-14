@@ -20,4 +20,9 @@ class Task {
 		show("Trying to set value to $value");
 		$this->$att = $value;
 	}
+
+	public function getProducts() {
+		show("Im going to the shop to get some products");
+		
+	}
 }
