@@ -3,16 +3,11 @@
 
 include 'messages.php';
 include 'task.php';
+include 'cooking.php';
 
 $new_task = new task("Go to the shop", "Buy some milk and bread"); // clase sukurta task.php faile // perduoti du parametrai - $title ir $desc
 
-$new_task->$isCompleted = true;
-
-show($new_task->$isCompleted);
-
-
 showa($new_task); // funkcija kuri nurodyta messages.php faile
 
-
-show("my text");
-showa(["vardas" => "tomas", "amzius" => "55"]);
+$another_task = new Cooking("Make something to eat", "anything really"); // title, descrip
+showa($another_task);
