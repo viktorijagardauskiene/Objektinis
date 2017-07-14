@@ -26,4 +26,15 @@ class Task implements TaskInterface { // turi atitikti nurodyta interface pvz_uz
 		show("Im going to the shop to get some products");
 
 	}
-}
+
+	//TaskInterface reikalavimai
+	public function getDaysToDeadline() {
+		// cia funkcija kuri suskaiciuoja dienas kiek liko pvz:
+		return 44;
+	}
+
+	public function getAge() {
+		// cia funkcija kuri suskaiciuoja dienas nuo tada kai buvo sukurtas taskas pvz:
+		return 44;
+	}
+ }

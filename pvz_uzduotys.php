@@ -16,3 +16,5 @@ interface TaskInterface {
 	public function getDaysToDeadline(); // neaprasom funkcijos, tik nurodom kad sitas metodas mum bus reikalingas
 	public function getAge();
 }
+
+show($new_task->getDaysToDeadline());
